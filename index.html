@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.form-row {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 8px;
+}
+
+.all-container {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 8px;
+}
+
+.grid-container0 {
+  display: grid;
+  grid-template-columns: 300px auto 100px 100px auto auto;
+  margin-bottom: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 150px auto 150px 100px 70px auto;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 100px 75px 100px 50px 120px 50px 50px 75px 75px;
+  margin-bottom: 8px;
+}
+
+.grid-holder {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid-item {
+  background-color: #e8f0f3af;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-head {
+    background-color: white;
+}
+
+.additional-row {
+    border: 1px solid rgba(129, 129, 129, 0.6);
+    padding: 8px;
+    text-align: center;
+}
+
+sup {
+  color: red;
+}
+
+.rx {
+  height: 500px;
+  width: auto;
+}
+
+.rx-overlay {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  left: 450px;
+  top: 500px;
+  background-color: rgba(0, 0, 0, 0.655);
+  padding: 15px;
+  user-select: none;
+}
+</style>
+</head>
+<body>
+
+<h1>Pharmacist Table mockup</h1>
+
+<div class='form-row'>
+    <label for='title'>Search: </label>
+    <input id='title' name='title' type='text' value="555555"/>
+  </div>
+
+<div class="all-container">
+
+    <div class="grid-container0">
+        <div class="grid-item grid-head">Name</div>
+        <div class="grid-item grid-head">Chronicles</div>
+        <div class="grid-item grid-head">Pet</div>
+        <div class="grid-item grid-head">DOB</div>  
+        <div class="grid-item grid-head">Drug Allergies</div>
+        <div class="grid-item grid-head">Other medcations</div>
+
+        <div class="grid-item"><img src="ss.png"  width="50" height="50"> Conan Leong (55555)</div>
+        <div class="grid-item">Notes: always ship Express. Gets $10 off once every January </div>
+        <div class="grid-item">Sparky</div>
+        <div class="grid-item">01/06/1976</div>  
+        <div class="grid-item">flovent</div>
+        <div class="grid-item">cialis, premarin</div>
+    </div>
+
+
+    <div class="grid-container">
+
+    <div class="grid-item grid-head">Order Number</div>
+    <div class="grid-item grid-head">Order Notes</div>
+    <div class="grid-item grid-head">Products</div>
+    <div class="grid-item grid-head">Ship Address</div>
+    <div class="grid-item grid-head">Confirmed Date</div>
+    <div class="grid-item grid-head">Total</div>
+    <div class="grid-item grid-head">Actions</div>
+
+    <div class="grid-item">A055555<sup>(1)</sup></div>
+    <div class="grid-item"><textarea id="w3review" name="w3review" rows="10" cols="50">
+      Pharmascience only please
+      </textarea></div>
+    <div class="grid-item grid-holder">
+        <div class="grid-container2">
+            <div class="grid-item grid-head">Medication</div>
+            <div class="grid-item grid-head">Strength</div>  
+            <div class="grid-item grid-head">Counseling</div> 
+            <div class="grid-item grid-head">Had Before</div>
+            <div class="grid-item grid-head">Quantity</div>
+            <div class="grid-item grid-head">Days Supply</div>
+            <div class="grid-item grid-head">Sig</div>
+            <div class="grid-item grid-head">Expiration</div>  
+            <div class="grid-item grid-head">Rx Number</div>
+
+
+            <div class="grid-item"> [B] Flovent (Flutciasone) HFA Inhaler</div>
+            <div class="grid-item">110 mcg</div>  
+            <div class="grid-item"><select name="cars" id="cars">
+              <option value="Needs">Needs</option>
+              <option value="Done">Done</option>
+              <option value="Declined">Declined</option>
+            </select></div>  
+            <div class="grid-item">Yes</div>
+            <div class="grid-item">1/1 Inhalers</div>
+            <div class="grid-item">60</div>
+            <div class="grid-item">2 puff BID</div>
+            <div class="grid-item">02/13/2022</div>  
+            <div class="grid-item"> 555555</div>
+
+            <div class="grid-item"> [G] Tadalafil</div>
+            <div class="grid-item">20 mg</div>  
+            <div class="grid-item"><select name="cars" id="cars">
+              <option value="Needs">Needs</option>
+              <option value="Done">Done</option>
+              <option value="Declined">Declined</option>
+            </select></div>  
+            <div class="grid-item">Yes</div>
+            <div class="grid-item">100/200 Tablets</div>
+            <div class="grid-item">300</div>
+            <div class="grid-item">1 tab PRN</div>
+            <div class="grid-item">05/11/2022</div>  
+            <div class="grid-item"> 666666</div>
+
+
+        </div>
+
+    </div>  
+    
+    <div class="grid-item">4918 Victoria Drive, BC, Vancouver</div>
+    <div class="grid-item">5/3/2022</div>
+    <div class="grid-item">$499.99</div>
+    <div class="grid-item">Edit preview confirm postpone reverse</div>
+
+    
+    </div>
+
+<!-- Notes:
+    searchable by rx number and date of birth
+
+    Pavan wants RX number and Total, Janice says no need
+
+    collpasible shipped orders history tab
+     -->
+
+</div>
+
+<div class="attachments" id="attachments">
+
+</div>
+
+<span class="carouselbuttons" id="carouselbuttons">
+
+</span>
+
+<script>
+
+  const PRESCRIPTION_ARRAY = ['Prescriptions/rx1.png', 'Prescriptions/rx2.png', 'Prescriptions/rx3.png']
+
+  var which_rx = 0
+
+  function caoruselClick() {
+    which_rx += 1
+    if (which_rx > PRESCRIPTION_ARRAY.length -1) which_rx = 0
+
+    document.getElementById('attachments').innerHTML = '<img src=' + PRESCRIPTION_ARRAY[which_rx] +  ' onclick =caoruselClick() class="rx" > <span class="rx-overlay" onclick =caoruselClick() class="rx">' + (which_rx + 1) + '/3</span>'
+    
+  }
+
+  caoruselClick()
+
+</script>
+
+</body>
+</html>
+
+
